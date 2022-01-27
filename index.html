@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!--  SWIPER-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
     <!-- STYLE -->
     <link rel="stylesheet" href="style.css" />
 
@@ -141,17 +147,99 @@
         </div>
       </section>
 
+      <div class="divider-1"></div>
+
       <section class="section" id="testimonials">
-        <div class="container grid"></div>
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos</h2>
+          </header>
+          <div class="testimonials swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias consequatur soluta, maxime sequi ipsam necessitatibus.
+                    Perferendis hic, molestias ab aspernatur earum officiis
+                    porro vel qui recusandae cumque quia a laudantium?
+                  </p>
+                  <cite>
+                    <img src="./assets/fotos/19.jpg" alt="Wanessa Souza" />
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias consequatur soluta, maxime sequi ipsam necessitatibus.
+                    Perferendis hic, molestias ab aspernatur earum officiis
+                    porro vel qui recusandae cumque quia a laudantium?
+                  </p>
+                  <cite>
+                    <img src="./assets/fotos/47.jpg" alt="Pedro Almeida" />
+                    Pedro Almeida
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias consequatur soluta, maxime sequi ipsam necessitatibus.
+                    Perferendis hic, molestias ab aspernatur earum officiis
+                    porro vel qui recusandae cumque quia a laudantium?
+                  </p>
+                  <cite>
+                    <img src="./assets/fotos/65.jpg" alt="Fabiane Souza" />
+                    Fabiane Souza
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
 
+      <div class="divider-2"></div>
+
       <section class="section" id="contact">
-        <div class="container grid"></div>
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a Beautysalon, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5531986621004&text=Oi%20Joia"
+              class="btn"
+              target="_blank"
+            >
+              <i class="icon-whatsapp"></i> Entrar em contato
+            </a>
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 11 0000-0000</li>
+              <li><i class="icon-map-pin"></i> R. Nossa Senhora, 326</li>
+              <li><i class="icon-mail"></i> contato@teste.com.br</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer></footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>
 </html>

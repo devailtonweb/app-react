@@ -25,3 +25,28 @@ window.addEventListener('scroll', () => {
     header.classList.remove('scroll')
   }
 })
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewhell: true,
+  keyboard: true
+})
+
+const scroll = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+ScrollReveal().reveal(
+  `#home .image, #home .text,
+  #about .image, #home .text,
+  #services header, #services .card,
+  #testimonials header, #testimonials .testmonials,
+  #contact .text, #contact .links`,
+  { interval: 100 }
+)
