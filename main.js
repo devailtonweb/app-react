@@ -71,18 +71,13 @@ function backToTop() {
 const sections = document.querySelectorAll('main section[id]')
 
 function activateMenuAtCurrentSection() {
-  const checkpoint = window.pageXOffset + (window.innerHeight / 8) * 4
-
+  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
   for (const section of sections) {
     const sectionTop = section.offsetTop
     const sectionHeight = section.offsetHeight
     const sectionId = section.getAttribute('id')
-
     const checkpointStart = checkpoint >= sectionTop
     const checkpointEnd = checkpoint <= sectionTop + sectionHeight
-
-    console.log('sd')
-
     if (checkpointStart && checkpointEnd) {
       document
         .querySelector('nav ul li a[href*=' + sectionId + ']')
